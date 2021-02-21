@@ -14,6 +14,10 @@
                 </div>
             </div>
         </div>
+        <div class="text-center">
+            <a href="https://github.com/santhoshjanan/simplepasswordapi"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/santhoshjanan/simplepasswordclient"><i class="fab fa-github"></i></a>
+        </div>
     </div>
 </template>
 
@@ -26,6 +30,9 @@ export default {
         return {
                 password: 'no-password'
             }
+    },
+    mounted(){
+        this.getNewPassword()
     },
     methods: {
         getNewPassword(){
