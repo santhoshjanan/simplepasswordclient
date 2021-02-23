@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         getNewPassword(){
-            axios.get('http://localhost')
+            axios.get('https://passrv.santhoshj.com/')
             .then(response => {this.password = response.data.password});
         },
 
